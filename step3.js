@@ -12,14 +12,14 @@ function getAndPrintHTML (options) {
 
     response.on('end', function() {
     console.log(totalResponse);
-  });
+    });
   });
 
 }
 
-  let requestOptions = {
-    host: 'sytantris.github.io',
-    path: '/http-examples/step3.html'
-  };
+let requestOptions = {
+  host: 'sytantris.github.io',
+  path: '/http-examples/step3.html'
+};
 
 getAndPrintHTML(requestOptions);
