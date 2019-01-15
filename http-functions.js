@@ -5,7 +5,7 @@ module.exports = function getHTML (options, callback) {
   https.get(options, function (response) {
     response.setEncoding('utf8');
     response.on('data', function(chunk) {
-      totalResponse += chunk + '\n';
+      totalResponse += chunk;
     });
 
     response.on('end', function (){
